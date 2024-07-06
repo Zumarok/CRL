@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CRL/Scenes/Initial.unity
+    guid: c78bb624091218640ae0a732ec630c8a
+  - enabled: 1
+    path: Assets/CRL/Scenes/Tower1.unity
+    guid: b5c5e9505ea081f438b5c600baf19059
+  - enabled: 1
+    path: Assets/CRL/Scenes/TowerExterior.unity
+    guid: 5cbd4562785122349a9a6505ae25ae2e
+  m_configObjects: {}

@@ -1,0 +1,568 @@
+commit 68bef214bfca586f272ff9ff0787da5c25fab76d
+Author: N H <NickH1981@gmail.com>
+Commit: N H <NickH1981@gmail.com>
+
+    - AbilityProcessor.cs: Updates the Process() function to handle multi-target abilities.
+    - Card.cs: Changes to the way enemies are targeted.
+    - InitSettings.cs: Increased the max number of LeanTweens: 400->800
+    - Chain Lightning: Updated english long description.
+
+commit ff899a48acdc26046ca0a89126dcbdc96efe50bd
+Author: N H <NickH1981@gmail.com>
+Commit: N H <NickH1981@gmail.com>
+
+    - New Ability: Chain Lightning
+    - Added _isRandomSecondaryTarget bool to Abilities.
+    - Updating SetTargetAtMouse()
+    - Updated Combat loop in CombatManager
+    - Added editor values for enemy turn delays
+
+commit b22dd1bbfad22e32503cc1c3e28d5ac0dbe26294
+Author: N H <NickH1981@gmail.com>
+Commit: N H <NickH1981@gmail.com>
+
+    - Added UI value 'Spawn Delay', which determines the delay between each enemy spawning in a given scenerio.
+    - Added a new enemy scenerio for testing.
+    - Skill Changes:
+      - Ice Comet: AE Radius 3->2
+      - Contamination: AE Radius 3->2
+    - Initial scene changed back to the combat scene for testing.
+
+commit 59a75a1b2ef0a16f470b12dd67ec8d542d577d8e
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Added tower ascend and descend functionality in the Tower_Lobby_01 scene. WIP.
+
+commit 05d981a318fc4227cf2caab76c7b44b9c62a9b65
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - New assests and changes for the Floor Navigation UI
+
+commit 8c52330e2c6fa39bbf172d80b7163b44c6f2a493
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Added new sprites for tower_lobby scene.
+
+commit bd308846efca282d11600fd47710f60f449bd30e
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Added 'Compress Time' to the Abilities and Localization Data
+
+commit 77f32e0da910ebfab8bf5d96a1ab81c24aac8251
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Fixed a layering issue in the player UI.
+
+commit 11f6dc058c167a9a906ad5a149f267db20ad3319
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Inventory and Rewards WIP (SingletonGame.prefab) -- PICK UP HERE NEXT TIME
+    - Added main font presets.
+    - New art assets.
+
+commit 4c06bfb978d0f232fb742ca580000e20889f4885
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Save/Load System added. All save data classes should implement IClonable and be stored in the SaveSystem namespace. The datas will be accessed from the DataManager and Save/Load functions are in the SaveManager function.
+    - Reward Window/System updates and WIP
+    - Added Experience bar UI and code.
+    - ProjectSettings update: changed company and product name.
+    - Added Death Exp penalty.
+
+commit ef2496f3847edca1e8a0c0b900ccaaa119fa74a7
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Reward System and Window First Pass -- WIP
+    - Added fade functionality to SoloWindow so all derived classes have a uniform way of handling.
+    - Added the start encounter function to the CombatSystem.
+    - Added the XP calculation functions to the Player class and the constant values to the Constants class.
+
+commit 9d2e51d46b9625bb3fb2787ff9defda0484d63b4
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Created SceneSystem and set up basic scene flow starting in the Initial scene.
+    - Created Initial scene, which contains only the SingletonInitial prefab.
+    - Created forest_01 scene, which includes only the terrain and lighting data.
+    - SceneLoader and SceneType added.
+    - InitSettings script added to the SingletonInitial prefab base. Game flow starts here, and initial settings can be placed here.
+
+commit e846f5e33017aeabe07ca56e8403ed6dd3a0bba0
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - All singleton monobehaviours shoould now derive from SingletonMonoBehaviour. This adds the ability to enfoce single instances of the script as well as a consistant static reference 'Instance'.
+    - Added the RewardType enum.
+
+commit 6929ebb5a0ef76bd3e5af4495a6d7744c4dad7c3
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Testing scene update.
+
+commit 48e28f0e142f7f10194f6dd22164364cba5d3a69
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Upscaled Planet texture and updated material.
+    - Updated Singleton prefabs so they no longer assign objects from outside of its own prefab.
+    - Added properties to dataManager.
+    - PlayerUiManger now finds and assigns properties that can't be assigned in the editor.
+    - Added new BG window textures.
+    - RewardSystem and windows WIP
+    - Added UISystemManager script to assign refs on start.
+
+commit 01e7dc7e9af74ae5dc88da21e3feeb749ffae450
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Fixed layer ordering issue for SmallInfoWindow
+    - Added new window BG sprite.
+
+commit 8b2954f8d441d7dbf6b090ad89ca867ee97c59fe
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Updated Health bar position on Bat prefab.
+    - Outline shader is now swapped for all meshRenderers on an enemy.
+    - Steam Golem enemy WIP
+
+commit 030cd2b98a33fcb78a41304ac54b7861d49f54ca
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Updating all enemy materials to use the unity default shader
+    - Moved the EnemyHealthBar Y Offset position prooperty from the HealthBarManager to the enemy itself.
+    - Changed the way the enemy health bar y position is calculated to be compatible with more models.
+    - WIP New Enemy 'Steam Golem'
+
+commit 01fe5c9e0def2451e4fe3b615e9419db15bd03d2
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Adjusted enemy skill Echolocate: Damage bonus 5->10 per stack, Added 15 absorb. Added icon.
+    - Adjusted enemy skill Life Sap I: Damage 15->10.
+    - Adjusted Skill Strike: MultiTarget: true->false, MultiHit: true->false. Updated shortDesc.
+    - Stopping enemy animation on death so dissolve doesn't look weird.
+    - Enemy Prefab Bat -> death anim time 5->10
+    - Added new Enemy Scenario: difficulty 2, 3 Bats.
+    - Enemies will no longer have '(Clone)' in their name.
+
+commit 62fa5e5d6ba5d5da3449ada619e345c4a9ce6461
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Enemy Health Bar is hidden at start of death animation now.
+    - Checking for Multi-hit flag on ability before multihitting in AbilityProcessor
+    - Checking that an enemy is alive before applying damage and heals
+    - Absorb skills are no longer flagged as TempEffects.
+    - Absorb should once again...absorb
+    - Recourse dots should now use the caster's damageBonus in the recourse heal portion.
+    - Ability and enemy number tweaks WIP
+
+commit 103dad8413974800b04cc75749fa26bd7ad04708
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Fixed issues with cards being interactable when they shouldnt be.
+    - WIP Enemy scenarios added
+    - slowed down enemy death dissolve and exposed the property for easy adjustment.
+    - Changes to FloatingText system.
+
+commit 97d3494bfcdf005b155e5eb2bdae1c21e708ea0d
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added a stack counter to buff icons
+    - WIP Bat enemy
+    - Added fields and properties to Ability data as needed for new skills
+    - DamageOrHealInfo struct now an interface that is implemented by DamageInfo and HealInfo
+    - Final damage values are calculated when a DamageInfo is made and can also be calculated from the DamgeInfo static function CalcFinalDamage()
+    - Added Damage Bonus buffs
+    - Fixed an issue where Enemy.cs wasn't using instanced versions of materials.
+    - WIP changing most ushorts to int for futureproofing.
+    - Added TempEffectShortDesc property to all IAbilities, which returns the skill's parsed short description with the owners damage bonus values added in. Useful for TempEffect tooltips.
+    - Added Keyword BuffDamageBonus
+    - Simplified some skill descriptions
+    -  Added stack count to temp effect name in EnemyInfoWindow.
+    - Attempted to fix the height on the AE radius ring, may still be broken.
+    - Imported new textures for Bat enemy.
+
+commit 89a7245db59731f27e2ec8f32df5b5a382a13fd5
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Enemy Intents update
+    - Moved imported Enemy Prefabs
+    - WIP Enemy spawn scenerios
+
+commit 7e5b286219ffdafcb298c1ea9e7192630496ef40
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Enemy intents now showing.
+    - Modified Abilities data to include EnemyAbility flag and EnemyIntent
+    - Enemies now choose their ability before the player's turn.
+
+commit 6853740280e662fd97b5fff140351ae1c4d54d43
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added Enemy Intent Icons to the EnemyHealthBar prefab and started adding the code for intents.
+    - namespace cleanup.
+
+commit 77b4ccd710bdbd7a106e67fa301e23a1d609972f
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Bug fix: Cards shouldn't get stuck facing up when the player ends their turn quickly after using an ability.
+    - Set TargetFramerate to 60 for development purposes. This should be adjustable in options eventually.
+
+commit 515e388f6bc6830cb63d352a56f8a2c52e4a363f
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Changed the DoT Vfx colors from green to purple.
+
+commit 981f2b1d80dc2ccfd1daba77e8f633d4da852466
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Updated card skill background effects.
+    - Pushing other imported assets.
+
+commit 5669005be1ea57e5107e4e65cc2ff56f75f8b1ec
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    -Updated enemy death disintegration effect.
+    - Added more flowmaps.
+    - Disabled gradient for card desc text.
+    - Added new enemy skill Life Sap
+    - Added support for Recourse DoTs
+    - Card hover zoom amount can now be changed via a slider on Card manager.
+    - Enemy damage taken anim no longer plays if taking a fatal hit.
+    - Using string buiilder in the keywordparser where possible
+
+commit 2579fb092066f25598fca8f2ef82c1d2041d955a
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added skill icon pack to project
+    - Added purchased card front to project
+    - Updated card fron graphics.
+    - Updated Font settings
+    - Updated all skill icons
+
+commit 6c02262c45df5c6683b350780108f9d4a18b67e7
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Ability and CardAbility now both implement IAbility where Ability will contain base ability info, useful for new cards and enemy abilities, and CardAbility will contain modifiers for it's base Ability.
+    - Ability processing is no longer a part of the Ability class and has been moved to an AbilityProcessor class which can handlle processing any implementation of IAbility.
+    - Moved decks and deck functions from the Combatant to the CardManager.
+    - CardManager is no longer a static reference and is instead a member of the Player class.
+    - EnemyInfoWindow and CardPileWindow now inherit from SoloWindow which has base OnShow and OnHide functions that will update the WindowShowing property of the CombatManager.
+    - Added localization entries for new windows.
+
+commit fdf86eacd7fce87d7223ed2b715bc6ec77cb2ac8
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added precomiler statements to keep editor code out of the final build where needed.
+    - Persistant VFX grpah effects should now be enabled on scene start as they use an excessive amount of CPU/GPU in the editor.
+    - CardPileWindow WIP
+
+commit 7d459c5a07234ec414190c6d4aeef63b9d625620
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Removed Dreaktek splines for perfomance reasons
+    - Remade Targetting arrow with Unity sprite spline system
+
+commit 6a91ac958bf4f0364125912573e545092bf2c57e
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Fixed the targetting arrow.
+
+commit e91872f05f512ae191afbee84dcdca9c3cb57649
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Order of execution big fix.
+
+commit 39b3e273f4bedf7be378645433bb2f8100fce956
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Updated font settings
+
+commit a47a0dcde473002ac3a159cc72b6e3ea12af013b
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Fixed a few graphic glitches on the card front.
+
+commit bb68319651ad558244981b82fc8590d8b09f34b6
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Created prefabs for most singletons in the main scene.
+
+commit 94f8888a3e96a42e149e0db2e8e5b9e11457b332
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Fixed bug with AE skills
+    - Updated FloatingText to work with RectTransforms
+
+commit 925c452f05f7ab29d5b316782b9e46b021ba9876
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Changes needed to support Screen Space - Camera overlay WIP
+
+commit 096d50d1885fc1636b266d0deb6a8ce9d3e29235
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Recreated card system using camera space UI
+
+commit be5ef761bea9dd5253b468d18f604d1d218e9fef
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Adding Bottom UI Overlay WIP
+
+commit 53d9e56d9f40118d24783d4c4123fb6d757f2ee7
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Force close the EnemyInfoWindow on enemy death.
+    - Disable EnemyInfoWindow interactability when invis.
+    - Added a black BG to enemy buff/debuff icons.
+
+commit 17bea127b8b85e64ff875c96a41ca09386d5237f
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added Enemy Info Window
+    - Added small Info window for enemy abilities, buffs, and debuffs ,as well as player buffs and debuffs.
+
+commit fdbc09dbb32b8abb022b208218df54cd9017208c
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Enemy info window WIP
+
+commit 3caa3947cf5a595bb075f24f9534af8ecda9a0ae
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    -Added new abilities: Blood Siphon(WIP), Enemy Burn I & II, Enemy Dual Strike I & II, Renew
+    - Added code for player Buffs/Debuffs
+    - Added code for player HoTs and RemoveHoTAndHeal
+    - Added some Floating text messages for combat events (Player turn, enemy turn, etc)
+    - Bug fixes for main combat loop: wait for all combatants to register before starting, exit loop when all enemies are dead.
+    - Added HoT related Keywords and values
+
+commit d8608193e5323cce856c38c8e8d20982e68b2772
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added player buff/debuff areas
+    - Cards now keep the bottom of the card aligned when zooming in
+    - Added mana check on card interaction with an error msg.
+
+commit 44f05e4a82e404c45a61e2d1057b43acd602f840
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added player Absorb shield UI
+    - Refactored targetting system: targets now belong to the card rather than the combat system to prevent bugs.
+    - Moved Card flags from CardManager to Card
+    - Removed Notification events for target changes
+
+commit ecd0ff12bfd6006dc4d1308e3b30ed4ee5c878c0
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added an notification event when the CombatManager's _currentTargetList changes.
+    - Card highlight now toggled using TargetExistsUpdate notification.
+
+commit 03884894339936b5abddd1352ef5fe685c417961
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Font fixes
+    - Card active highlight added
+    - Added 2 new skills, Strike and Guard
+
+commit 1de36328f7ad7cd8321865eda04ad390bff18802
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Updates to Immoral Font asset
+    - Added disintegration effect to enemies on death
+    - UI and VFX tweaks
+    - Added the ability to use particle system vfx in addition to the VFX graph effects for abilities
+    - Added flow map VFX to card which can be added via the ability system
+    - Added deform effects to enemies when attacking and taking damage
+    - Added new shaders for cards
+    - Added Substance material support plugin
+    - Added VFX for Contamination
+
+commit f631aa4769b34b4c687ddf1d96ff2cd7536315a4
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    VFX, Card graphics, shaders, materials WIP
+
+commit ba133b968009ccd6404fd6424124c584cc47ad02
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Imported new assets and plugins as well as worked on the scene visuals.
+    - Imported Houdini Plugin and a few HDAs
+    - Imported Trees/Rocks/Ice/Bushes assets
+    - Imported Beautify post renderer
+    - Imported PolyBrush
+    - Imported Volumetric Lights
+
+commit 62afd3dbbf56c466c768763047bd567546105b3c
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added UI elements for Absorb spells.
+    - Added new Enemy abilities, Heal, Absorb, Cleanse, ranks 1-3
+    - Fixed a bug in the ability creation system that misaligned the AbilityName enum
+    - Added code to handle the new ability types.
+    - Added new player ability Contamination.
+    - Added new AbilityType EffectMod
+    - Added default attacks to enemies.
+    - Added end turn button.
+
+commit efb9734a9a6b4b9d839d28fb0029b66e8fc31632
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added a limit (8) to buffs and debuffs.
+    - Added a lifetime property for ability VFX to fix a bug with the VFX pooling.
+
+commit a8b53dfbae2f9d7fe67fb8e30c16dc1b091dacc1
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added VFX prefabs to the pool system.
+    - Added playback speed and scaling options to VFX.
+    - Added VFX for player ability Exponential Decay.
+
+commit 204cc722fd92b59c83e331808781280818c723c2
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added new player ability: Exponential Decay.
+    - Fixed a bug in the Ability creator UI where the AbilityName enum wasn't being assigned.
+    - Fixed a bug where the ability name waasn't being localized.
+    - Added in much code for DoT/Temp effects logic.
+    - Fixed a bug where the enemy health bars were not positioning correctly when updated.
+    - Fixed a bug where floating text was not scaling correctly when showing damage on an enemy.
+
+commit f9ea3a8482b098c33ab3b2a0cd4a8784656dacb7
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added TempEffect.cs which is the base class for all buffs/debuffs.
+    - Skill creator UI remade with Odin.
+    - Buff debuff logic, including applying, handling turns and damage and UI WIP.
+
+commit 621f686a8ec8ff27991965353a3599ca8f1cedb7
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added new Keyword system, keywords and lookup values are added through a scriptable object (Crux>KeywordData), which will also add 2 localized string entries: description and displayname. The LocalizationData scriptable object will show the values to use in localized descriptions. Keywords that are used in the localized long description will be replaced with a hoverable link that will show a localized tooltip. Values that are used will be replaced with the abilities values.
+
+commit 546fd6f7a269019c78af829f1f78b85bb9b17ec1
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Fixed Outline width on the enemy shader.
+    - Changed Target Ring color.
+    - EnemyBash dmg 2 -> 10.
+    - Cards only zoom when face up now.
+    - Enemy outline material swap moved to the Enemy script from the combat manager.
+    - Adding mana to the player at the start of the turn.
+    - Floating text objects now scale the entire prefab rather than adjust font size.
+    - Starting adding keywords in localization text for the Keyword system parsing.
+    - Added a collider extension that calculates the colliders size in pixels.
+    - Fixed a bug on the EnemyHealthBar shader.
+    - Added UI artwork for health/mana orb borders.
+
+commit f490506e49ab19ce6d564e4925bd89e4481df4e9
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    WIP
+    - Changes to Enemy Health Bar prefab: Added health text, added debuffs, added new shader and mask.
+    - Added Splash dmg to abilities.
+    - Ability draw/discard flow.
+    - Splash dmg AE cirlce.
+    - Sort enemy health bars in the heirarchy for correct render order.
+
+commit ab2fe60c270deb2647bde2798730e19be2cd6bb3
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Added Mana cost to abilities and functionality to support this.
+    - Added PlayerUIManager.cs and hooked uphealth and mana UI interaction.
+    -Updated FloatingText to support more options.
+
+commit 8a63a8124f1b197e1613a5fbd485fa07735119b9
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Added Health/mana orb to the scene.
+
+commit a1ef4a3778005ac2ae8a4c8f3fa7b0ba949c4c57
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - Moved Deform folder into the Plugins folder
+    - Added Moune Health/mana orbs.
+
+commit 602e9c5dd0af3c8b0d8ce8bd9a9c805323d2a445
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    - SFX can now be added through the Ability Creator
+    - Added SFX for Ice Comet (temp)
+    - Added a script to check for resolution changes which sends out a notification.
+    - Health Bars now reposition on resolution change.
+
+commit c3c8d2ebfbf333fe4b77e1f161891c802ea5cf79
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Modified globalignore file to include .obj files.
+
+commit 330d12306156b8d72a78216d07253277d888ba43
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Recreating entire CRL project in locally hosted repository using Gitea.
+
+commit 0bf750de1126002899a181aa801d232b53ba6847
+Author: N H <NH@gmail.com>
+Commit: N H <NH@gmail.com>
+
+    Initial Commit after relocating from BitBucket to Gitea (local server)
+     - Added LFS and Git ignore

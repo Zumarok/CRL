@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a4239b184d7be4ab0de2b8c3c6ff85, type: 3}
+  m_Name: KeywordData
+  m_EditorClassIdentifier: 
+  keywordDictionary:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues:
+    - SplashDamage
+    - DoT
+    - Absorb
+    - HoT
+    - Cleanse
+    - Overheal
+    - Overshield
+    - Overkill
+    _keys:
+    - SplashDamage
+    - DoT
+    - Absorb
+    - HoT
+    - Cleanse
+    - Overheal
+    - Overshield
+    - Overkill
+    _values:
+    - '&SplashDamage&'
+    - '&DoT&'
+    - '&Absorb&'
+    - '&HoT&'
+    - '&Cleanse&'
+    - '&Overheal&'
+    - '&Overshield&'
+    - '&Overkill&'
+  valueDictionary:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues:
+    - DirectDamage
+    - DoTDamage
+    - Duration
+    - Radius
+    - NumOfTargets
+    - NumOfHits
+    - AbsorbValue
+    - HoTValue
+    - HoTRemoveAndHealMult
+    - CleanseValue
+    - HealValue
+    - BuffFlatDamageDealt
+    - BuffPercentDamageDealt
+    - BuffFlatDamageTaken
+    - BuffPercentDamageTaken
+    - BuffDamageTakenOnCast
+    - BuffHealTakenOnCast
+    - DispelValue
+    - BuffExplodeValue
+    - BuffExtraCastValue
+    - BuffDamageTakenOnTurn
+    - TriggerValue
+    - TriggerChance
+    - TriggeredHealValue
+    - TriggeredBuffPercentDamageDealt
+    - TriggeredBuffPercentMaxHp
+    - BuffPercentMaxHp
+    - ExtraWaves
+    - ReelEnemyHealthPercent
+    - ReelGoldDropMod
+    - ReelEnemyDamagePercent
+    - ReelShardDropMod
+    - ReelModExtraDD
+    - ReelModMaxMana
+    - ReelModEliteSpawns
+    _keys:
+    - DirectDamage
+    - Radius
+    - Duration
+    - DoTDamage
+    - NumOfTargets
+    - NumOfHits
+    - AbsorbValue
+    - HoTValue
+    - HoTRemoveAndHealMult
+    - CleanseValue
+    - HealValue
+    - BuffFlatDamageTaken
+    - BuffFlatDamageDealt
+    - BuffPercentDamageDealt
+    - BuffPercentDamageTaken
+    - BuffDamageTakenOnCast
+    - BuffHealTakenOnCast
+    - DispelValue
+    - BuffExtraCastValue
+    - BuffExplodeValue
+    - BuffDamageTakenOnTurn
+    - TriggerValue
+    - TriggerChance
+    - TriggeredHealValue
+    - TriggeredBuffPercentDamageDealt
+    - TriggeredBuffPercentMaxHp
+    - BuffPercentMaxHp
+    - ExtraWaves
+    - ReelEnemyHealthPercent
+    - ReelGoldDropMod
+    - ReelEnemyDamagePercent
+    - ReelShardDropMod
+    - ReelModExtraDD
+    - ReelModMaxMana
+    - ReelModEliteSpawns
+    _values:
+    - ^DirectDamage^
+    - ^Radius^
+    - ^Duration^
+    - ^DoTDamage^
+    - ^NumOfTargets^
+    - ^NumOfHits^
+    - ^AbsorbValue^
+    - ^HoTValue^
+    - ^HoTRemoveAndHealMult^
+    - ^CleanseValue^
+    - ^HealValue^
+    - ^BuffFlatDamageTaken^
+    - ^BuffFlatDamageDealt^
+    - ^BuffPercentDamageDealt^
+    - ^BuffPercentDamageTaken^
+    - ^BuffDamageTakenOnCast^
+    - ^BuffHealTakenOnCast^
+    - ^DispelValue^
+    - ^BuffExtraCastValue^
+    - ^BuffExplodeValue^
+    - ^BuffDamageTakenOnTurn^
+    - ^TriggerValue^
+    - ^TriggerChance^
+    - ^TriggeredHealValue^
+    - ^TriggeredBuffPercentDamageDealt^
+    - ^TriggeredBuffPercentMaxHp^
+    - ^BuffPercentMaxHp^
+    - ^ExtraWaves^
+    - ^ReelEnemyHealthPercent^
+    - ^ReelGoldDropMod^
+    - ^ReelEnemyDamagePercent^
+    - ^ReelShardDropMod^
+    - ^ReelModExtraDD^
+    - ^ReelModMaxMana^
+    - ^ReelModEliteSpawns^

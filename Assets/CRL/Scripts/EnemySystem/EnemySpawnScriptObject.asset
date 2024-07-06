@@ -1,0 +1,588 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9ac8b850739fe4b9d53841b790d6bd, type: 3}
+  m_Name: EnemySpawnScriptObject
+  m_EditorClassIdentifier: 
+  _enemySpawnScenarios:
+  - _scenarioName: Boss
+    _enemySpawnWaves:
+    - _spawnDelay: 0.5
+      _race: 0
+      _enemySpawns:
+      - _spawnPointIndex: 0
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: a1bfda57d09eac04d958474acc4887d3,
+          type: 3}
+      - _spawnPointIndex: 1
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 8366979252270886522, guid: 69f92f4878094144b97dccd7a8a937f0,
+          type: 3}
+      - _spawnPointIndex: 2
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 5210155436338414333, guid: d88fe9764ccbf334491440109bf8019c,
+          type: 3}
+      - _spawnPointIndex: 3
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 7081275774942158371, guid: 119050aeb2ae6e3469bb7c3c4f330525,
+          type: 3}
+      - _spawnPointIndex: 4
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 7296185739117585216, guid: 77a4c7710fc904b41bd22c84c79fd190,
+          type: 3}
+      - _spawnPointIndex: 5
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 6
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 7
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 8
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 9
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+  - _scenarioName: Standard
+    _enemySpawnWaves:
+    - _spawnDelay: 0.5
+      _race: 0
+      _enemySpawns:
+      - _spawnPointIndex: 0
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 7081275774942158371, guid: 119050aeb2ae6e3469bb7c3c4f330525,
+          type: 3}
+      - _spawnPointIndex: 1
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 8366979252270886522, guid: 69f92f4878094144b97dccd7a8a937f0,
+          type: 3}
+      - _spawnPointIndex: 2
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 1537256812331581087, guid: ff822efa6ee137642ab6d20acc3f9511,
+          type: 3}
+      - _spawnPointIndex: 3
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 1537256812331581087, guid: ff822efa6ee137642ab6d20acc3f9511,
+          type: 3}
+      - _spawnPointIndex: 4
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 1537256812331581087, guid: a1bfda57d09eac04d958474acc4887d3,
+          type: 3}
+      - _spawnPointIndex: 5
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 6
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 7
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 5210155436338414333, guid: d88fe9764ccbf334491440109bf8019c,
+          type: 3}
+      - _spawnPointIndex: 8
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 1537256812331581087, guid: da848e616cdf6814baa5edfc4cb12a68,
+          type: 3}
+      - _spawnPointIndex: 9
+        _spawnType: 1
+        _allowedRaces: 5
+        _allowedSizes: 7
+        _allowedClassifications: 3
+        _prefab: {fileID: 5210155436338414333, guid: d88fe9764ccbf334491440109bf8019c,
+          type: 3}
+  - _scenarioName: Tutorial
+    _enemySpawnWaves:
+    - _spawnDelay: 0.5
+      _race: 0
+      _enemySpawns:
+      - _spawnPointIndex: 0
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 1
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 2
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 3
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 4
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 5
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 6
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 7
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 8
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 9
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+    - _spawnDelay: 0.5
+      _race: 0
+      _enemySpawns:
+      - _spawnPointIndex: 0
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: a1bfda57d09eac04d958474acc4887d3,
+          type: 3}
+      - _spawnPointIndex: 1
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 7081275774942158371, guid: 119050aeb2ae6e3469bb7c3c4f330525,
+          type: 3}
+      - _spawnPointIndex: 2
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 3
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 4
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 5
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 6
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 7
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 8
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 9
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+  - _scenarioName: Video1
+    _enemySpawnWaves:
+    - _spawnDelay: 0.5
+      _race: 0
+      _enemySpawns:
+      - _spawnPointIndex: 0
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 1
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 2
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 3
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 4
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 5
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 6
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 7
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 8
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 9
+        _spawnType: 1
+        _allowedRaces: 1
+        _allowedSizes: 1
+        _allowedClassifications: 1
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+  - _scenarioName: Video2
+    _enemySpawnWaves:
+    - _spawnDelay: 0.5
+      _race: 0
+      _enemySpawns:
+      - _spawnPointIndex: 0
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 1
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 2
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 3
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 4
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 5
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 6
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 7
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 8
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 9
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+  - _scenarioName: Video3
+    _enemySpawnWaves:
+    - _spawnDelay: 0.5
+      _race: 0
+      _enemySpawns:
+      - _spawnPointIndex: 0
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: da848e616cdf6814baa5edfc4cb12a68,
+          type: 3}
+      - _spawnPointIndex: 1
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 837061f0f81a6404eb60a19003c0c375,
+          type: 3}
+      - _spawnPointIndex: 2
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 80dad65400d7da14999766a0a36bb59f,
+          type: 3}
+      - _spawnPointIndex: 3
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: ff822efa6ee137642ab6d20acc3f9511,
+          type: 3}
+      - _spawnPointIndex: 4
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 474a25d031332df4c967d4f6bb3730d2,
+          type: 3}
+      - _spawnPointIndex: 5
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: cc975efe0d8e9a645b965e1623df5f21,
+          type: 3}
+      - _spawnPointIndex: 6
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: cc975efe0d8e9a645b965e1623df5f21,
+          type: 3}
+      - _spawnPointIndex: 7
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 8
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+      - _spawnPointIndex: 9
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 9732bf9bd702d9142abe7a409d10cbd9,
+          type: 3}
+  - _scenarioName: Video4
+    _enemySpawnWaves:
+    - _spawnDelay: 0.5
+      _race: 0
+      _enemySpawns:
+      - _spawnPointIndex: 0
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: 4a5e5dee0a2daee4ead0cdc59f836ae3,
+          type: 3}
+      - _spawnPointIndex: 1
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 7081275774942158371, guid: 119050aeb2ae6e3469bb7c3c4f330525,
+          type: 3}
+      - _spawnPointIndex: 2
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: a1bfda57d09eac04d958474acc4887d3,
+          type: 3}
+      - _spawnPointIndex: 3
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 5210155436338414333, guid: d88fe9764ccbf334491440109bf8019c,
+          type: 3}
+      - _spawnPointIndex: 4
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 7296185739117585216, guid: 77a4c7710fc904b41bd22c84c79fd190,
+          type: 3}
+      - _spawnPointIndex: 5
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 1537256812331581087, guid: f521b0c4d1321d44aadeb4057c9ecfb6,
+          type: 3}
+      - _spawnPointIndex: 6
+        _spawnType: 2
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 8366979252270886522, guid: 69f92f4878094144b97dccd7a8a937f0,
+          type: 3}
+      - _spawnPointIndex: 7
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 8
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}
+      - _spawnPointIndex: 9
+        _spawnType: 0
+        _allowedRaces: 0
+        _allowedSizes: 0
+        _allowedClassifications: 0
+        _prefab: {fileID: 0}

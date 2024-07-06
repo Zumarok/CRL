@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{8500884b-d322-4027-a0e4-3352b5babd72}">
+		<property name="assetPath">
+			<value>IceComet.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.3705442176870752</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{95d55820-866a-4924-b0ec-50ef42f20c3a}</destination>
+		</relationship>
+	</object>
+</objects>

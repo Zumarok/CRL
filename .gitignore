@@ -1,0 +1,64 @@
+# =============== #
+# General         #
+# =============== #
+*.metadata
+*.class
+*.xdat
+*.xdat.meta
+*.apk
+*.ipa
+*.jar
+*.rsp
+
+# =============== #
+# Unity generated #
+# =============== #
+[Tt]emp/
+[Oo]bj/
+[Bb]uild[s]/
+/[Ll]ibrary/
+[Uu]nityPackageManager/
+PS4Build/
+sysinfo.txt
+*.stackdump
+UserInfo.ini
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.csproj
+/*.pidb
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+[Tt]humbs.db.meta
+[Dd]esktop.ini
+Assets/StreamingAssets/Config/UserInfo.ini.meta
+*.pkf
+RegisterIcalls.cpp
+
+# ============ #
+# Misc         #
+# ============ #
+fmod_editor.log
+.cache/
+.unsaved/
+.user/
+Assets/Plugins/FMOD/Resources/FMODStudioCache.asset
+Assets/Plugins/FMOD/Resources/FMODStudioCache.meta
+heu_session.txt

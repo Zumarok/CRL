@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{188d050a-462b-45f1-9a69-0edca05e612d}">
+		<property name="assetPath">
+			<value>MetalImpactMetal.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5797083333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{95d55820-866a-4924-b0ec-50ef42f20c3a}</destination>
+		</relationship>
+	</object>
+</objects>
