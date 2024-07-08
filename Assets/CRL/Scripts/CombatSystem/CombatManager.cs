@@ -188,7 +188,7 @@ namespace Crux.CRL.CombatSystem
 
         private IEnumerator StartEncounterCo(int tier)
         {
-            //EnemySpawnManager.Instance.LoadScenarioByFloor(DataManager.Instance.TowerFloorInfo);
+            EnemySpawnManager.Instance.LoadScenarioByFloor(DataManager.Instance.TowerFloorInfo);
             //var floor = DataManager.Instance.RunData.CurrentTowerFloor;
             //if (floor < 10)
             //    EnemySpawnManager.Instance.LoadScenarioByName("Video1");
